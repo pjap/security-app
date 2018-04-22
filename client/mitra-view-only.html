@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image" sizes="16x16" href="assets/images/faviconsa.png">
+    <title>Dashboard Admin || Ardina Mulya Perkasa</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header card-no-border">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon -->
+                        <b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Light Logo icon -->
+                            <img src="assets/images/logo-light-icon2.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span>
+                         <!-- Light Logo text -->
+                         <img src="assets/images/logo-light-text2.png" class="light-logo" alt="homepage" />
+                       </span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item hidden-sm-down search-box"> <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i class="ti-close"></i></a> </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- User profile -->
+                <div class="user-profile" style="background: url(assets/images/background/user-info.jpg) no-repeat;">
+                    <!-- User profile image -->
+                    <div class="profile-img"> <img src="assets/images/users/profile.png" alt="user" /> </div>
+                    <!-- User profile text-->
+                    <div class="profile-text"> <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Hi, Prana Jaya</a>
+                        <div class="dropdown-menu animated flipInY"> <a href="karyawan-view-only.html" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                            <div class="dropdown-divider"></div> <a href="karyawan-rubah-password.html" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
+                            <div class="dropdown-divider"></div> <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End User profile text-->
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a href="index7.html"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </span></a>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-account"></i><span class="hide-menu">Database Karyawan</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="karyawan.html"><i class="mdi mdi-eye"></i> Lihat Data</a></li>
+                                <li><a href="karyawan-update.html"><i class="mdi mdi-plus"></i> Tambah Data</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-home-variant"></i><span class="hide-menu">Database Mitra</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="mitra.html"><i class="mdi mdi-eye"></i> Lihat Data</a></li>
+                                <li><a href="mitra-update.html"><i class="mdi mdi-plus"></i> Tambah Data</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-chart-line"></i><span class="hide-menu">Laporan</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                              <li><a href="report-absen.html"><i class="mdi mdi-account-check"></i> Laporan Absen</a></li>
+                              <li><a href="report-patroli.html"><i class="mdi mdi-account-key"></i> Laporan Patroli</a></li>
+                              <li><a href="report-sos.html"><i class="mdi mdi-account-alert"></i> Laporan SOS</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="penilaiankinerja.html"><i class="mdi mdi-book"></i><span class="hide-menu">Penilaian Kinerja</span></a>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-settings"></i><span class="hide-menu">Setting</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                              <li><a href="garduinduk.html"><i class="mdi mdi-account-location"></i> Gardu Induk</a></li>
+                              <li><a href="checkpoint.html"><i class="mdi mdi-alarm-check"></i> Checkpoint</a></li>
+                              <li><a href="shift.html"><i class="mdi mdi-account-convert"></i> Shift</a></li>
+                              <li><a href="kodedarurat.html"><i class="mdi mdi-alert"></i> Kode Darurat</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 col-8 align-self-center">
+                        <h3 class="text-themecolor m-b-0 m-t-0">Profile Mitra</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Profile Mitra</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-7 col-4 align-self-center">
+                        <div class="d-flex m-t-10 justify-content-end">
+                          <div class="d-flex m-r-20 m-l-10 hidden-md-down">
+                              <div class="chart-text m-r-10">
+                                  <h6 class="m-b-0">
+                                    <small>Total Masuk Tepat Waktu Kemarin</small>
+                                  </h6>
+                                  <h4 class="m-t-0 text-info">
+                                    <a href="#">
+                                      120 Orang
+                                    </a>
+                                  </h4>
+                                </div>
+                          </div>
+                          <div class="d-flex m-r-20 m-l-10 hidden-md-down">
+                              <div class="chart-text m-r-10">
+                                <h6 class="m-b-0">
+                                  <small>Total Terlambat Kemarin</small>
+                                </h6>
+                                <h4 class="m-t-0 text-primary">
+                                  <a href="#">
+                                    2 Orang
+                                  </a>
+                                </h4>
+                              </div>
+                          </div>
+                            <div class="d-flex m-r-20 m-l-10 hidden-md-down">
+                                <div class="chart-text m-r-10">
+                                    <h6 class="m-b-0">
+                                      <small>Total Tidak Patroli Kemarin</small>
+                                    </h6>
+                                    <h4 class="m-t-0 text-primary">
+                                      <a href="#">
+                                        2 Orang
+                                      </a>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="d-flex m-r-20 m-l-10 hidden-md-down">
+                                <div class="chart-text m-r-10">
+                                    <h6 class="m-b-0">
+                                      <small>Total Kode Darurat Kemarin</small>
+                                    </h6>
+                                    <h4 class="m-t-0 text-primary">
+                                      <a href="#">
+                                        2 Kasus
+                                      </a>
+                                    </h4>
+                                </div>
+                            </div>
+                            <!-- <div class="">
+                                <button class="right-side-toggle waves-effect waves-light btn-success btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <!-- Row -->
+
+                <!-- Row -->
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card card-outline-info">
+                            <div class="card-header">
+                                <h4 class="m-b-0 text-white">Detail Profile Mitra</h4>
+                            </div>
+                            <div class="card-body">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-body">
+                                        <h3 class="box-title m-b-40"><strong>Data Profil</strong></h3>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Nama</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> PT PLN Cawang Bermartabat </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Nomor Telfon</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> 021 123 456 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Email</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> plncawang@gmail.com </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Alamat</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> Jalan Raya Cawang Terang No 17 Kelurahan Kedung Badak Jakarta Selatan </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Nilai Kontrak (Rp)</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> 456,898,898 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Jangka Waktu Kontrak</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> 17/12/2021 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Jaminan Pelaksanaan (Rp)</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> 456,898,898 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Jangka Waktu Jaminan</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> 17/12/2021 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>PIC</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> Nanang Nasrulloh </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Nomor Telfon PIC</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> 0856 1234 5678 910 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>PPN</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> 10 % </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>PPH 23</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> Ini isi dari PH 23 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Deskripsi Perusahaan</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static">
+                                                           Perusahaan yang bergerak di bidang per listrikan dengan hampir 100 cabang dan sudah go international
+                                                           dan sudah malang melintang seperti pemain sepakbola.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Note/Keterangan</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> Perusahaan ini stabil , tidak mempunyai hutang </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <hr class="m-t-0 m-b-40">
+                                        <h3 class="box-title m-b-40"><strong>Data QR Code</strong></h3>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Nama GI</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> GI Gandul </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                              <div class="form-group row">
+                                                  <label class="control-label text-right col-md-3"><strong>Nama Checkpoint</strong></label>
+                                                  <div class="col-md-9">
+                                                      <p class="form-control-static"> Pos 1 </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Latitude</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> -6.597147 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                              <div class="form-group row">
+                                                  <label class="control-label text-right col-md-3"><strong>Longitude</strong></label>
+                                                  <div class="col-md-9">
+                                                      <p class="form-control-static"> 106.806039 </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>QR Code</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static">
+                                                          <img src="../assets/images/background/qr.jpg" alt="gambar qrcode" width="250px;" height="220px;">
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                              <div class="form-group row">
+                                                  <label class="control-label text-right col-md-3"><strong>Nama Checkpoint</strong></label>
+                                                  <div class="col-md-9">
+                                                      <p class="form-control-static"> Pos 2 </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>Latitude</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static"> -6.597147 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                              <div class="form-group row">
+                                                  <label class="control-label text-right col-md-3"><strong>Longitude</strong></label>
+                                                  <div class="col-md-9">
+                                                      <p class="form-control-static"> 106.806039 </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3"><strong>QR Code</strong></label>
+                                                    <div class="col-md-9">
+                                                        <p class="form-control-static">
+                                                          <img src="../assets/images/background/qr.jpg" alt="gambar qrcode" width="250px;" height="220px;">
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <div class="form-actions">
+                                      <hr class="m-t-0 m-b-15">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <button type="submit" class="btn btn-info"> <i class="fa fa-pencil"></i> Edit</button>
+                                                        <button type="button" class="btn btn-inverse">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6"> </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer">
+                © 2018 Mitra Cari Kosan Admin by pjap17.com
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+
+</html>
